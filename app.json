@@ -1,0 +1,42 @@
+{
+  "name": "Tik Tok Download",
+  "description": "Telegram Bot to Download Tiktok video/audio.",
+  "logo": "https://telegra.ph/file/76ac770b698d2336ad134.png",
+  "keywords": [
+    "telegram",
+    "best",
+    "video",
+    "tiktok"
+  ],
+  "success_url": "https://github.com/klvvv/Tik-Tok-Pro",
+  "website": "https://github.com/klvvv",
+  "repository": "https://github.com/klvvv/Tik-Tok-Pro",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Your bot token, as a string.",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  }, {
+    "url": "heroku/python"
+  }],
+  "stack": "heroku-20",
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
