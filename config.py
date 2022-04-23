@@ -1,0 +1,1 @@
+BOT_TOKEN = "5015568806:AAEhdpTSpazD8onHFBcdrqUjhFNHPl_k0wg"APP_URL = "https://mytik.herokuapp.com/" + BOT_TOKEN
